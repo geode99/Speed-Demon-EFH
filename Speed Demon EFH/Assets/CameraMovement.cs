@@ -17,13 +17,11 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // vector from camera that points to player's position
         cameraOffset = player.transform.position - transform.position;
         cameraOffset.z = 0;
 
+        // move camera
         transform.Translate(cameraOffset/cameraSmoothing);
-        //transform.position = transform.position + cameraOffset/cameraSmoothing;
-
-        print(transform.position);
-        print(player.transform.position);
     }
 }
