@@ -17,10 +17,11 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraOffset.x = player.transform.position.x - transform.position.x;
-        cameraOffset.y = player.transform.position.y - transform.position.y;
+        cameraOffset = player.transform.position - transform.position;
+        cameraOffset.z = 0;
 
-        transform.position = transform.position + cameraOffset/cameraSmoothing;
+        transform.Translate(cameraOffset/cameraSmoothing);
+        //transform.position = transform.position + cameraOffset/cameraSmoothing;
 
         print(transform.position);
         print(player.transform.position);
