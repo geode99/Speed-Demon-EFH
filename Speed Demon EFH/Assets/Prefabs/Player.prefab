@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 4436926216143021241}
   - component: {fileID: 2554012874758761075}
   - component: {fileID: 2555122471001395682}
+  - component: {fileID: 1808720571580490042}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -357,3 +358,15 @@ MonoBehaviour:
   projectilePrefab: {fileID: 8787392560137837765, guid: 7c88c032b49dc074394fbd6fd6986fd8, type: 3}
   firePoint: {fileID: 1329082849882118963}
   projectileSpeed: 30
+--- !u!114 &1808720571580490042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8107800259654195257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5deccd1c4d799cc45ac4867862111d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
