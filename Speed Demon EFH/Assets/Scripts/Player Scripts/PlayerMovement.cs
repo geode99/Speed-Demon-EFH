@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = false;
     private float airResist = 1f;
     private float coyoteTimeCounter = 0f;
-
+    public float scaleFactor = 0.7f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,7 +32,12 @@ public class PlayerMovement : MonoBehaviour
         }else{
             accelerationTimerX = 0f;
         }
-
+        // Flip player sprite based on movement direction
+        if (moveX > 0){
+            transform.localScale = new Vector3(scaleFactor, scaleFactor, scaleFactor);
+        }else if (moveX < 0){
+            transform.localScale = new Vector3(-scaleFactor, scaleFactor, scaleFactor);
+        }
         float velocityX = maxSpeed * moveX * (1 - Mathf.Exp(-accelerationRate * accelerationTimerX));
         float velocityY = rb.linearVelocity.y;
 
@@ -53,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb.linearVelocity = new Vector2(velocityX * airResist, velocityY);
 
-        // Jump input (spacebar)d 
+        // Jump input (spacebar) 
         if (Keyboard.current.spaceKey.wasPressedThisFrame && coyoteTimeCounter > 0f){
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             coyoteTimeCounter = 0f;
