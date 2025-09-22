@@ -12,8 +12,8 @@ public class MouseTracking : MonoBehaviour
 
         Vector2 direction = (mouseWorldPos - centerPoint.position);
         direction.Normalize();
-
-        transform.position = centerPoint.position + (Vector3)direction;
+        
+        transform.position = centerPoint.position + (Vector3)direction * 0.7f;
 
         float angle = Vector2.SignedAngle(Vector2.right, direction);
         transform.rotation = Quaternion.Euler(0, 0, angle);

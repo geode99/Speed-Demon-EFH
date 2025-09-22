@@ -25,8 +25,8 @@ Transform:
   m_GameObject: {fileID: 1427561914765619060}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.495, y: -0.493, z: 0}
-  m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1}
+  m_LocalPosition: {x: 0.5, y: -0.5, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7156236941464205823}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 122266031149727238}
   - component: {fileID: 8948636469213677177}
   - component: {fileID: 7216142654174983970}
-  - component: {fileID: 6008550515734836953}
+  - component: {fileID: 7277570008215838476}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -124,7 +124,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3748501772635830263}
@@ -210,6 +210,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   coyoteTime: 0.2
+  scaleFactor: 0.7
 --- !u!50 &8948636469213677177
 Rigidbody2D:
   serializedVersion: 5
@@ -259,8 +260,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!70 &6008550515734836953
-CapsuleCollider2D:
+--- !u!61 &7277570008215838476
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -293,9 +294,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.09054098, y: -0.1803491}
-  m_Size: {x: 1.603327, y: 3.4381146}
-  m_Direction: 0
+  m_Offset: {x: 0.19156134, y: -0.42050064}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.6923077, y: 3.8461537}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.0944059, y: 3.0051525}
+  m_EdgeRadius: 0
 --- !u!1 &8107800259654195257
 GameObject:
   m_ObjectHideFlags: 0
