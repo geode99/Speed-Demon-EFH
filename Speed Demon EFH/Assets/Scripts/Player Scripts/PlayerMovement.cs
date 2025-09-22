@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private float airResist = 1f;
     private float coyoteTimeCounter = 0f;
     public float scaleFactor = 0.7f;
+
+    public Animator animator;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -62,6 +64,13 @@ public class PlayerMovement : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame && coyoteTimeCounter > 0f){
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             coyoteTimeCounter = 0f;
+
+            animator.SetTrigger("Jump");
         }
+
+        // animator controls
+        animator.SetFloat("XSpeed", Mathf.Abs(velocityX));
+        animator.SetFloat("YSpeed", velocityY);
+        animator.SetBool("isGrounded", isGrounded);
     }
 }
