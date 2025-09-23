@@ -193,9 +193,59 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 209107606}
+    m_ColliderPaths:
+    - - X: 210000000
+        Y: 30000000
+      - X: 140000000
+        Y: 30000000
+      - X: 140000000
+        Y: 10000000
+      - X: 210000000
+        Y: 10000000
+    - - X: 480000000
+        Y: -20000000
+      - X: 120000000
+        Y: -20000000
+      - X: 120000000
+        Y: -10000000
+      - X: 110000000
+        Y: -10000000
+      - X: 110000000
+        Y: 0
+      - X: 60000000
+        Y: 0
+      - X: 60000000
+        Y: -10000000
+      - X: 40000000
+        Y: -10000000
+      - X: 40000000
+        Y: -20000000
+      - X: -40000000
+        Y: -20000000
+      - X: -40000000
+        Y: -30000000
+      - X: 480000000
+        Y: -30000000
   m_CompositePaths:
-    m_Paths: []
+    m_Paths:
+    - - {x: 20.999971, y: 1}
+      - {x: 20.999971, y: 3}
+      - {x: 14, y: 2.999971}
+      - {x: 14.000029, y: 1}
+    - - {x: 47.999973, y: -3}
+      - {x: 47.999973, y: -2}
+      - {x: 12, y: -1.9999707}
+      - {x: 11.99997, y: -1}
+      - {x: 11, y: -0.9999706}
+      - {x: 10.99997, y: 0}
+      - {x: 6, y: -0.000029300001}
+      - {x: 5.9999704, y: -1}
+      - {x: 4, y: -1.0000293}
+      - {x: 3.9999704, y: -2}
+      - {x: -4, y: -2.0000293}
+      - {x: -3.999971, y: -3}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -259,7 +309,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
