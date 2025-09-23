@@ -66,6 +66,9 @@ public class EnemyMovement : MonoBehaviour
                 if (!ledgeAhead || wallAhead)
                 {
                     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+                    // trigger animator jump parameter
+                    animator.SetTrigger("Jump");
                 }
             }
         }
@@ -74,5 +77,10 @@ public class EnemyMovement : MonoBehaviour
             // Stop moving if player is out of range
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
+
+        // update animator parameters
+        animator.SetFloat("XSpeed", Mathf.Abs(rb.linearVelocity.x));
+        animator.SetFloat("YSpeed", rb.linearVelocity.y);
+        animator.SetBool("isGrounded", isGrounded);
     }
 }

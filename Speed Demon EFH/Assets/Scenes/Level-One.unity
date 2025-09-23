@@ -62005,6 +62005,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 747710698}
+    - target: {fileID: 5694146056909494438, guid: c48392f8aaf4f7a44a2c87c0f866eb9d, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1942914673}
+    - target: {fileID: 5694146056909494438, guid: c48392f8aaf4f7a44a2c87c0f866eb9d, type: 3}
+      propertyPath: detectionRange
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7755246875896235167, guid: c48392f8aaf4f7a44a2c87c0f866eb9d, type: 3}
       propertyPath: m_Name
       value: Enemy

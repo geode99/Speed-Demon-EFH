@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if (moveX != 0){
             accelerationTimerX += Time.deltaTime;
         } else {
-            accelerationTimerX = 0f;
+            accelerationTimerX *= 0.8f;
         }
 
         // Flip player sprite based on movement direction
