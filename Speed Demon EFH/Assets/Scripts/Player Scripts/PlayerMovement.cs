@@ -31,13 +31,14 @@ public class PlayerMovement : MonoBehaviour
         // Exponential acceleration for X
         if (moveX != 0){
             accelerationTimerX += Time.deltaTime;
-        }else{
+        } else {
             accelerationTimerX = 0f;
         }
+
         // Flip player sprite based on movement direction
         if (moveX > 0){
             transform.localScale = new Vector3(scaleFactor, scaleFactor, scaleFactor);
-        }else if (moveX < 0){
+        } else if (moveX < 0){
             transform.localScale = new Vector3(-scaleFactor, scaleFactor, scaleFactor);
         }
         float velocityX = maxSpeed * moveX * (1 - Mathf.Exp(-accelerationRate * accelerationTimerX));
@@ -52,8 +53,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded) {
             coyoteTimeCounter = coyoteTime;
             airResist = 1f;
-        }
-        else {
+        } else {
             coyoteTimeCounter -= Time.deltaTime;
             airResist = 0.8f;
         }
