@@ -36,6 +36,13 @@ public class EnemyMovement : MonoBehaviour
             // Determine direction
             float direction = Mathf.Sign(player.position.x - transform.position.x);
 
+            // Flip enemy to face player
+            if (direction != 0){
+                Vector3 localScale = transform.localScale;
+                localScale.x = Mathf.Abs(localScale.x) * direction;
+                transform.localScale = localScale;
+            }
+
             // Move towards player
             rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
 
