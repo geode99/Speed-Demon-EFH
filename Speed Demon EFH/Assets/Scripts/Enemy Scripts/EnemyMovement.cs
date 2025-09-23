@@ -15,6 +15,8 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded = false;
 
+    public Animator animator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
