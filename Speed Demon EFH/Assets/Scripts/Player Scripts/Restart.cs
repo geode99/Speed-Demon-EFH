@@ -1,15 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    public Transform targetRoom; // Assign the target room Transform in the Inspector
+    public string targetSceneName; // Set the name of the target scene in the Inspector
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") && targetRoom != null)
+        if (collision.gameObject.CompareTag("Enemy") && !string.IsNullOrEmpty(targetSceneName))
         {
-            // Move this object to the target room's position
-            transform.position = targetRoom.position;
+            SceneManager.LoadScene(targetSceneName);
         }
     }
 }
