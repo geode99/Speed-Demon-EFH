@@ -106391,24 +106391,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 77565478}
   m_SourcePrefab: {fileID: 100100000, guid: c48392f8aaf4f7a44a2c87c0f866eb9d, type: 3}
---- !u!1 &1107664430 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6561775016518834448, guid: b012e85a44b22d3449c831be8a11883f, type: 3}
-  m_PrefabInstance: {fileID: 1172208457}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1107664435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107664430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4b1871df1d851a42865ec577d48752b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetRoom: {fileID: 0}
 --- !u!1001 &1172208457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106424,6 +106406,10 @@ PrefabInstance:
     - target: {fileID: 122266031149727238, guid: b012e85a44b22d3449c831be8a11883f, type: 3}
       propertyPath: accelerationRate
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830401414876017408, guid: b012e85a44b22d3449c831be8a11883f, type: 3}
+      propertyPath: targetSceneName
+      value: Restart
       objectReference: {fileID: 0}
     - target: {fileID: 6561775016518834448, guid: b012e85a44b22d3449c831be8a11883f, type: 3}
       propertyPath: m_Name
@@ -106480,10 +106466,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6561775016518834448, guid: b012e85a44b22d3449c831be8a11883f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1107664435}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b012e85a44b22d3449c831be8a11883f, type: 3}
 --- !u!1 &1384773278 stripped
 GameObject:
