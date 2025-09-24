@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 7216142654174983970}
   - component: {fileID: 7277570008215838476}
   - component: {fileID: 4830401414876017408}
+  - component: {fileID: 1837064978164767412}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -288,7 +289,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b1871df1d851a42865ec577d48752b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRoom: {fileID: 0}
+  targetSceneName: Restart
+--- !u!114 &1837064978164767412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6561775016518834448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5780976e41c4e8a4da0aa5ae6cd37446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: Win
 --- !u!1 &8107800259654195257
 GameObject:
   m_ObjectHideFlags: 0
